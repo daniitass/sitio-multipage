@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'raleway';
+    font-size: 18px;
+    font-weight: 300;
+    color: #707070;
+}
+/*####globales### */
+a{
+    text-decoration: none;
+}
+h1{
+    font-weight: 600;
+    color: white;
+    font-size: 32px;
+    width: 1100px;
+    margin: 48px auto;
+
+}
+h2{
+    font-size: 18px;
+    font-weight:  600;
+}
+p{
+    margin: 16px 0px ;
+}
+
+
+header {
+    min-height: 250px ; /*altura minima */
+    background: rgb(215,143,183);
+    background: linear-gradient(90deg, rgba(215,143,183,1) 7%, rgba(201,185,241,1) 47%);
+    /*https://cssgradient.io/*/
+}
+header div {
+    height: 100px;
+    width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+}
+
+header a {
+    color: white;
+    font-weight: 600;
+
+}
+header nav a {
+    padding: 12px; /*para agrandar la caja y mejorar el area de clic*/
+}
+
+header div a img {
+    width: 56px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+header section {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    color: white;
+
+}
+
+header section div{
+    width: 630px;
+    justify-content: space-evenly;
+}
+ header section img {
+    margin: 69px 120px 60px 95px;
+}
+header section h1 {
+    margin-bottom: 0px 0px 24px 0px;
+}
+
+.descarga{
+   /* width: 210px; me queda feo  */ 
+    border: 1px solid #fff ;  /*borde */
+    padding: 16px 56px;   
+    border-radius: 40px; /* bordes redondeados*/ 
+    font-weight: 300;
+    margin-top: 48px;
+    text-align: center;
+    transition: .3s; /* puede ponerse sino como 300ms que son milisegundos
+    es para q cuando pases el hover sea mas lento*/
+}
+
+.fa-brands {
+    font-size: 20px;
+}
+.descarga:hover{ /* para que cuando el mouse pasa cambie de color*/
+    color: #D596C0;
+    background-color: #fff;
+}
+
+/*main*/
+main {
+    min-height: 450px;
+    width: 1100px;
+    margin: auto;
+}
+
+#contenido-index {
+    display: flex;
+    height: 448px;
+    align-items: center;
+}
+
+#contenido-index h2 {
+    margin: 28px 0px;
+    font-size: 18px;
+    font-weight:  600;
+}
+
+#contenido-index article{
+    text-align: center;
+}
+
+#contenido-index img{
+    width: 72px;
+    /*border: 1px solid #323232;
+    border-radius: 100%;
+    padding:12px; 
+    esto es para poner un borde y el padding para generar espacio entre el borde y la foto
+    */
+}
+/*### nuestra app#### */
+#nuestra-app{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+
+}
+#nuestra-app div{
+    width: 580px;
+
+}
+#features {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* para respetar el tamaño del contido que se envuelve */
+}
+
+#features article{
+    width: 326px;
+    margin-bottom: 76px;
+}
+#features article h2 img{
+    vertical-align: middle;
+    margin-right: 12px;
+}
+/* ### planes###*/
+#planes{
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#planes article{
+    width: 326px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px #707070 ; /* 10px 10px 0px borde esfumado a la derecha y hacia abajo*/
+    padding-bottom: 48px;
+}
+#planes h2{
+    margin-top: 32px;
+}
+
+#planes div{
+    background-color: #F8F8F8 ;
+    margin: 20px 0px;
+    padding-bottom: 8px;
+}
+
+#planes ul {
+    margin-bottom: 32px;
+}
+
+#planes li {
+    line-height:32px ;
+    list-style: none;  /*saca los puntos de la lista*/
+}
+#planes div span {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+#planes a {
+    border: solid 2px #707070; 
+    padding: 8px 40px;
+    border-radius: 36px;
+    transition: 300ms;
+}
+#planes a:hover {
+    background-color: #262626;
+    color:#fff;
+    
+}
+
+#destacado div, #destacado a {
+    background: rgb(215,143,183);
+    background: linear-gradient(90deg, rgba(215,143,183,1) 7%, rgba(201,185,241,1) 47%);
+    color: #fff;
+    border: rgb(215,143,183) 1px solid;
+}
+#destacado a:hover{
+    background: rgb(215,143,183);
+    background: linear-gradient(180deg, rgba(215,143,183,1) 0%, rgba(201,185,241,1) 100%);
+    /*cambie el angulo del color .. de 90 pase a 180*/
+}
+
+/*### nosotros###*/
+#nosotros {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+#nosotros img{
+    width: 245px;
+    height: 310px;
+    /*puedo poner un margin bottom en lugar de generar otra regla*/
+}
+
+#nosotros h2{
+    margin-top: 12px;
+}
+#nosotros div{
+    transition: 3ms;
+}
+#nosotros div:hover{
+        border-radius: 12px; 
+        box-shadow: -10px -10px 0px #c3c7d3 ;
+        background-color: #c3c7d3;
+    }
+
+#nosotros div img:hover{
+    width: 255px;
+    height: 350px;
+    border-radius: 12px;
+}
+
+
+/*## fondo de contactos##*/
+#fondo-contacto{
+  /* width: 100%; reescribo la medida del main global */ 
+   padding: 60px 0px; 
+   background-image: url(../imgs/comprar.html);
+   background-size: cover;
+
+}
+
+
+#fondo-contacto section {
+    background-color: #fff;
+    width: 1000px;
+    margin: auto;
+    padding: 60px;
+    display: flex;
+    border-radius: 12px;
+    justify-content: space-between;
+
+}
+
+#fondo-contacto form{
+    width: 550px;
+}
+
+#fondo-contacto input, 
+#fondo-contacto button, 
+#fondo-contacto textarea{
+    width: 100%;
+    border-radius: 12px;
+    border:none;
+    padding: 16px; /* esto da la altura de los input , el centrado y la separacion */
+    font-family: Raleway;
+    color:#707070;
+    font-weight: 600;
+}
+
+#fondo-contacto input,
+#fondo-contacto textarea {
+    background-color: #F4F4F4 ;
+    margin-bottom: 16px;
+    border: #F4F4F4 solid;
+}
+
+#fondo-contacto button{
+    background-color: #707070;
+    color: #fff;
+    transition: .3s;
+    padding: 10px;
+}
+
+#fondo-contacto button:hover{
+    background-color:#444444;
+}
+
+#fondo-contacto textarea{
+    height: 100px;
+    
+    resize: none; /* saca la posibilidad de agrandar*/
+}
+
+#fondo-contacto div{
+    width: 250px;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2; /* multiplica el espacio de las lineas x2*/
+    border-radius: 12px;
+    border: #F4F4F4 solid;
+}
+#fondo-contacto div a{
+    color: #707070;
+}
+
+#fondo-contacto div img{
+    width: 72px;
+    height: 72px;
+    border: 1px solid #707070;
+    border-radius: 36px;
+    padding: 8px ;
+    margin-top: 8px;
+}
+
+/*footer*/
+footer {
+    background-color: #262626;
+    
+   
+}
+    #contenidofooter{
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 1100PX;
+        align-items: center;
+        height: 150px;
+    }
+
+    #contenidofooter a{
+        color: white;
+        font-weight: 600;
+    }
+    #logo-footer img{
+        width: 32px;
+        margin-right: 8px;
+        vertical-align: middle;
+    }
+
+    footer div a img{
+        width: 16px;
+        margin-left: 8px;
+    }
+
+    
